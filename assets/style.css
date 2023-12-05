@@ -16,6 +16,7 @@
 
 body {
   background-color: #f0f5fa;
+  
 }
 
 /* Header - Yasmin Ibrahim */
@@ -49,15 +50,12 @@ header nav {
   margin-right: 20px;
   float: right;
   font-size: 20px;
+  color: var(--blue);
 }
 
 header nav ul li {
   display: inline-block;
   margin-left: 25px;
-}
-
-nav a:visited {
-  color: var(--blue);
 }
 
 nav a:hover {
@@ -67,6 +65,7 @@ nav a:hover {
 nav a:link,
 nav a:visited {
   text-decoration: none;
+  color: var(--blue);
 }
 
 /* hero banner */
@@ -223,6 +222,11 @@ footer .card {
 
 /* ADD NEW media queries */
 
+@media ONLY screen and {
+  
+}
+
+*/
 
 /* My work section styling */
 
