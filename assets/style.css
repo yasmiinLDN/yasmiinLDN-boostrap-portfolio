@@ -23,7 +23,7 @@ header {
   color: var(--blue);
   height: 90px;
   width: 100%;
-  background: #a3c2e0;
+  background: #b5cfe7;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -89,8 +89,6 @@ nav a:visited {
   right: 0;
 }
 
-/* CHECK BELOW */
-
 /* About Me section styling */
 
 h2 {
@@ -118,20 +116,6 @@ p {
   color: var(--blue)
 }
 
-/*
-.container-fluid {
-  background-image: url(./images/avatar.jpg);
-  background-size: cover;
-  height: max-content;
-  width: 100%;
-  height: 150px;
-  background-size: cover;
-  position: relative;
-}
-*/
-
-/* KEEP */
-
 .section-heading img {
   border-radius: 5px;
   max-width: 40%;
@@ -142,6 +126,8 @@ p {
   bottom: 50px;
   left: 130px;
 }
+
+/* CHECK BELOW */
 
 
 /* My work section styling */
@@ -207,10 +193,18 @@ footer a {
 }
 
 footer a:hover {
-  font-size: 30px;
   color: white;
   background-color: var(--blue);
 }
+
+footer .card {
+    margin: 0 auto;
+    height: 100%;
+    padding: 0;
+    border: thick solid #a3c2e0;
+    text-decoration: none;
+    color: white;
+  }
 
 /* media queries */
 @media only screen and (max-width:900px) {
