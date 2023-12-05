@@ -1,4 +1,4 @@
-# yasmin-new-portfolio: Module 3 Challenge
+# New Portfolio: Module 3 Challenge
 
 ## Description 
 
