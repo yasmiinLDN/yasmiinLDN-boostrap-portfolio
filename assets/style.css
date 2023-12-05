@@ -23,7 +23,7 @@ header {
   color: var(--blue);
   height: 90px;
   width: 100%;
-  background: #b5cfe7;
+  background: #b7cfe4;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -135,8 +135,6 @@ p {
   left: 20px;
 }
 
-/* CHECK BELOW */
-
 
 /* My work section styling */
 .text {
@@ -174,12 +172,22 @@ p {
   margin: 40px 80px 40px 0;
 }
 
+/* Skills section styling */
+
+.list-group-item-action.bg-success {
+  color: white;
+}
+
+.list-group-item-action {
+  color: var(--blue);
+}
+
 /* footer styling */
 
 footer h3 {
   font-size: 30px;
-  color: var(--blue);
-  margin-left: 15px;
+  color: white;
+  margin-left: 60px;
 }
 
 
@@ -206,28 +214,14 @@ footer a:hover {
 }
 
 footer .card {
-    margin: 0 auto;
-    height: 100%;
-    padding: 0;
-    border: thick solid #a3c2e0;
-    text-decoration: none;
-    color: white;
-  }
-
-/* media queries */
-@media only screen and (max-width:900px) {
-  .textone {
-    background-color: #abdbe3;
-    width: 35%;
-    padding: 10px 0 10px 0;
-  }
-
-  .text {
-    background-color: #abdbe3;
-    width: 100%;
-    font-size: 13px;
-  }
+  margin: 0 auto;
+  padding: 0;
+  border: thin solid #a3c2e0;
+  text-decoration: none;
+  background-color: #b5cfe7;
 }
+
+/* ADD NEW media queries */
 
 
 /* My work section styling */
@@ -244,9 +238,9 @@ footer .card {
 
 
 .card-title {
-color:var(  --blue);
-margin-left: 2rem;
-font-weight: bold;
+  color: var(--blue);
+  margin-left: 2rem;
+  font-weight: bold;
 }
 
 .cardContainer {
@@ -259,6 +253,6 @@ font-weight: bold;
 }
 
 a.btn.btn-primary {
-position: relative;
-left: 25px;
+  position: relative;
+  left: 25px;
 }
