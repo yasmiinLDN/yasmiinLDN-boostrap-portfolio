@@ -115,15 +115,24 @@ p {
   color: var(--blue)
 }
 
-.section-heading img {
+.container-fluid {
+  display: flex;
+}
+
+
+.container-fluid.py-3 {
+  background-color: #f0f5fa;
+}
+
+.container-fluid img {
   border-radius: 5px;
-  max-width: 40%;
-  height: auto;
+  max-width: 15%;
+  height: 10%;
   padding: 10px;
   margin-left: 8px;
   position: relative;
-  bottom: 50px;
-  left: 130px;
+  bottom: 5px;
+  left: 20px;
 }
 
 /* CHECK BELOW */
@@ -157,6 +166,7 @@ p {
 .section-heading {
   max-width: 40%;
   flex: 0 0 300px;
+  margin-top: 30px;
 }
 
 .section-content {
@@ -169,7 +179,6 @@ p {
 footer h3 {
   font-size: 30px;
   color: var(--blue);
-  margin-top: 60px;
   margin-left: 15px;
 }
 
@@ -221,43 +230,23 @@ footer .card {
 }
 
 
-@media only screen and (max-width:700px) {
-  li {
-    display: none;
-  }
-}
-
-@media only screen and (max-width:600px) {
-  .section-content {
-    margin: 20px 0 20px 0;
-  }
-
-  .section-content p {
-    line-height: 1.0;
-    padding-left: 20px;
-  }
-
-  footer div a {
-    text-decoration: none;
-    font-family: var(--fonttype);
-    color: var(--blue);
-    font-size: 15px;
-  }
-
-}
-
-
-/* NEW CODE (integrate with above later */
-
 /* My work section styling */
 
 .card {
   margin: 0 auto;
   height: 100%;
-  padding: 30px;
+  padding: 20px;
   border: thick solid #a3c2e0;
   text-decoration: none;
   color: white;
+}
+
+
+
+.card-title {
+color:var(  --blue);
+margin-left: 2rem;
+font-weight: bold;
 }
 
 .cardContainer {
@@ -269,6 +258,7 @@ footer .card {
   /* Added */
 }
 
-.flex {
-  display:flex;
+a.btn.btn-primary {
+position: relative;
+left: 25px;
 }
