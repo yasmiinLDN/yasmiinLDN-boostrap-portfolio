@@ -17,12 +17,14 @@
 
 body {
   background: var(--pagebackground);
-  
+
 }
 
-.btn-primary {
+.btn-primary,
+.progress-bar {
   --bs-btn-border-color: var(--pagebackground);
   --bs-btn-bg: var(--button-color);
+  background-color: var(--button-color);
 }
 
 /* Header - Yasmin Ibrahim */
@@ -149,7 +151,7 @@ p {
 .section {
   display: flex;
   gap: 2rem;
-  background:var(--pagebackground);
+  background: var(--pagebackground);
 }
 
 .section-heading {
@@ -255,10 +257,11 @@ a.btn.btn-primary {
   background: var(--pagebackground);
   border: var(--pagebackground);
   font-size: 25px;
-  color:var(--blue)
+  color: whitesmoke;
 }
 
-.list-group-item:hover, .list-group-item:visited {
-  background:hsla(203, 63%, 67%, 0.45);
+.list-group-item:hover,
+.list-group-item:visited {
+  background: hsla(203, 63%, 67%, 0.45);
   color: var(--blue);
 }
