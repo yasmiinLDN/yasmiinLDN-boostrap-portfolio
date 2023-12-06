@@ -4,19 +4,25 @@
   --font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   --opacity: 0.8;
   --bordercolour: #a3c2e0;
+  --pagebackground: #b5cfe7;
+  --button-color: hsla(203, 91%, 26%, 0.5);
 }
 
 * {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
 
 body {
-  background-color: #f0f5fa;
+  background: var(--pagebackground);
   
+}
+
+.btn-primary {
+  --bs-btn-border-color: var(--pagebackground);
+  --bs-btn-bg: var(--button-color);
 }
 
 /* Header - Yasmin Ibrahim */
@@ -60,6 +66,7 @@ header nav ul li {
 
 nav a:hover {
   background-color: var(--blue);
+  --bs-nav-link-hover-color: whitesmoke;
 }
 
 nav a:link,
@@ -91,7 +98,8 @@ nav a:visited {
 /* About Me section styling */
 
 h2 {
-  border-right: thick solid var(--bordercolour);
+  border-right: thick solid whitesmoke;
+  color: var(--blue);
 }
 
 #heading-two {
@@ -118,11 +126,6 @@ p {
   display: flex;
 }
 
-
-.container-fluid.py-3 {
-  background-color: #f0f5fa;
-}
-
 .container-fluid img {
   border-radius: 5px;
   max-width: 15%;
@@ -136,19 +139,8 @@ p {
 
 
 /* My work section styling */
-.text {
-  background-color: #a3c2e0;
-  width: 40%;
-  padding: 10px 0 10px 0;
-}
 
-.textone {
-  background-color: #a3c2e0;
-  width: 15%;
-  padding: 10px 0 10px 0;
-
-}
-
+/* CHANGE THIS */
 .project:hover {
   transform: scale(1.05);
 }
@@ -156,8 +148,7 @@ p {
 .section {
   display: flex;
   gap: 2rem;
-  border-left: thick;
-  border-color: (--bordercolour);
+  background:var(--pagebackground);
 }
 
 .section-heading {
@@ -215,9 +206,8 @@ footer a:hover {
 footer .card {
   margin: 0 auto;
   padding: 0;
-  border: thin solid #a3c2e0;
   text-decoration: none;
-  background-color: #b5cfe7;
+  background-color: var(--pagebackground);
 }
 
 /* ADD NEW media queries */
@@ -228,17 +218,20 @@ footer .card {
   margin: 0 auto;
   height: 100%;
   padding: 20px;
-  border: thick solid #a3c2e0;
+  border: var(--pagebackground);
+  background: var(--pagebackground);
   text-decoration: none;
-  color: white;
+  bottom: 25px;
 }
 
-
-
 .card-title {
-  color: var(--blue);
+  color: whitesmoke;
   margin-left: 2rem;
   font-weight: bold;
+}
+
+p.card-text {
+  color: whitesmoke;
 }
 
 .cardContainer {
@@ -253,4 +246,18 @@ footer .card {
 a.btn.btn-primary {
   position: relative;
   left: 25px;
+}
+
+/* SKILLS SECTION */
+
+.list-group-item {
+  background: var(--pagebackground);
+  border: var(--pagebackground);
+  font-size: 25px;
+  color:var(--blue)
+}
+
+.list-group-item:hover, .list-group-item:visited {
+  background:hsla(203, 63%, 67%, 0.45);
+  color: var(--blue);
 }
