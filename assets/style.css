@@ -163,7 +163,7 @@ align-items: center;
 
 .section-content {
   flex: 1;
-  margin: 40px 80px 40px 0;
+  margin-top: 20px;
 }
 
 /* Skills section styling */
@@ -212,6 +212,7 @@ footer .card {
   padding: 0;
   text-decoration: none;
   background-color: var(--pagebackground);
+  margin-top: 20px;
 }
 
 /* ADD NEW media queries */
