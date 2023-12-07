@@ -15,9 +15,8 @@
   font-family: 'Roboto', sans-serif;
 }
 
-body {
-  background: var(--pagebackground);
-
+body, .bg-body-tertiary {
+  background-color: var(--pagebackground) !important;
 }
 
 .btn-primary,
@@ -122,11 +121,13 @@ h2 {
 p {
   line-height: 1.5;
   padding-left: 30px;
-  color: var(--blue)
+  color: var(--blue);
+align-items: center;
 }
 
 .container-fluid {
   display: flex;
+  background: var(--pagebackground);
 }
 
 .container-fluid img {
