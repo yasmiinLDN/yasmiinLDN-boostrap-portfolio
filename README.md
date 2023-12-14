@@ -40,7 +40,7 @@ This project involved building a portfolio page in bootstrap, by using the skill
 
 Below shows the layout of the final website:
 
-![screenshot of index.html](./assets/images/Site-screenshot.png)
+![screenshot of index.html](./images/Site-screenshot.png)
 
 
 ## Credits
