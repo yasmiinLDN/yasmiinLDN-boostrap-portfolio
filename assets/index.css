@@ -10,10 +10,12 @@
 /* button info */
 .btn-primary,
 .progress-bar {
-  --bs-btn-border-color: var(--pagebackground);
+  --bs-btn-border-color: color: rgba(71, 65, 65, 0.9) !important;
   --bs-btn-bg: var(--button-color);
   background-color: var(--button-color);
   color: whitesmoke !important;
+  --bs-btn-hover-color:  rgba(71, 65, 65, 0.5) !important;
+    --bs-btn-hover-bg: hsla(203, 91%, 26%) !important;
 }
 
 /* Text */
@@ -151,6 +153,7 @@ padding: 20px 10px 20px 10px;
 
 .myProjects {
   padding: 0px 15px 15px 15px;
+  row-gap: 20px;
 }
 
 .myProjects img {
@@ -195,7 +198,6 @@ padding: 20px 10px 20px 10px;
 .contact-section {
   --bs-card-border-color: none !important;
   padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
   background: hsla(203, 91%, 26%, 0.5);
 }
 
@@ -205,49 +207,22 @@ padding: 20px 10px 20px 10px;
   border-bottom: 0.3rem hsla(203, 91%, 26%);
 }
 
-/* EDIT BELOW FROM TRAVEL CALI */
 
-.contact-section .card h4 {
-  font-size: 0.8rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
-  /* background: rgba(183, 207, 228, 0.7); */
+.contact-section a:link {
+  color: hsla(203, 91%, 26%);
 }
+
+.contact-section a {
+  text-decoration: none !important;
+}
+
+/* EDIT BELOW FROM TRAVEL CALI */
 
 .contact-section .card hr {
   border-color: hsla(203, 91%, 26%);
   border-width: 0.3rem;
   ;
 }
-
-.contact-section .social {
-  margin-top: 3.5rem;
-  padding: 3rem;
-}
-
-.contact-section .social a {
-  text-align: center;
-  height: 3rem;
-  width: 3rem;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 100%;
-  line-height: 3rem;
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.contact-section .social a:hover {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.contact-section .social a:active {
-  color: #fff;
-}
-
-.bg-black {
-  background-color: #000000 !important;
-}
-
 /* Footer */
 
 
@@ -258,9 +233,34 @@ padding: 20px 10px 20px 10px;
 
 footer {
   margin-top: 0;
-  padding: 15px 0;
+  padding: 15px 0 5px 0;
   text-align: center;
   /* color: rgba(255, 255, 255, 0.3); */
   color: whitesmoke;
   background-color: hsla(203, 91%, 26%, 0.9);
+}
+
+/* SOCIALS SECTION */
+
+.social {
+  padding: 20px 0 20px 0;
+  background: hsla(203, 91%, 26%, 0.5) !important; 
+  
+}
+.social a {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: hsla(203, 91%, 26%, 0.3) !important;
+  border-radius: 100%;
+  line-height: 3rem;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+.social a:hover {
+  transition-duration: 0.3s;
+  color: rgba(71, 65, 65, 0.9) !important;
+}
+
+.social a:active {
+  color: #fff !important;
 }
