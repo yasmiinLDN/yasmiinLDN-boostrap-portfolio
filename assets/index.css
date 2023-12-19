@@ -14,8 +14,8 @@
   --bs-btn-bg: var(--button-color);
   background-color: var(--button-color);
   color: whitesmoke !important;
-  --bs-btn-hover-color:  rgba(71, 65, 65, 0.5) !important;
-    --bs-btn-hover-bg: hsla(203, 91%, 26%) !important;
+  --bs-btn-hover-color: rgba(71, 65, 65, 0.9) !important;
+  --bs-btn-hover-bg: hsla(203, 91%, 26%) !important;
 }
 
 /* Text */
@@ -119,20 +119,21 @@ section.testimonials .testimonial-item {
   margin-right: 15px;
 }
 
-.rockBackground {
+.d-flex {
+align-items: flex-start !important;
+justify-content: center;
+}
+
+.ldnBackground {
   background-image: url(../images/MyLondon2.JPG);
-  opacity: 0.65;
+  opacity: 0.7;
   background-size: cover;
   background-repeat: no-repeat;
   /* height: calc(110vh - 25px); */
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Jumbotron copy */
 .jumboCopy {
-  width: 70%;
   /* min-width: 600px;
   max-width: 800px; */
   color: white;
@@ -141,7 +142,7 @@ section.testimonials .testimonial-item {
 
 /* Cards */
 .content {
-padding: 20px 10px 20px 10px;
+  padding: 20px 10px 20px 10px;
 }
 
 .sectionHeading {
@@ -223,6 +224,7 @@ padding: 20px 10px 20px 10px;
   border-width: 0.3rem;
   ;
 }
+
 /* Footer */
 
 
@@ -244,9 +246,10 @@ footer {
 
 .social {
   padding: 20px 0 20px 0;
-  background: hsla(203, 91%, 26%, 0.5) !important; 
-  
+  background: hsla(203, 91%, 26%, 0.5) !important;
+
 }
+
 .social a {
   text-align: center;
   height: 3rem;
@@ -256,6 +259,7 @@ footer {
   line-height: 3rem;
   color: rgba(255, 255, 255, 0.8) !important;
 }
+
 .social a:hover {
   transition-duration: 0.3s;
   color: rgba(71, 65, 65, 0.9) !important;
